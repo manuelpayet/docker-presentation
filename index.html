@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
-
+		<link rel="stylesheet" href="css/docker-presentation.css">
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -25,11 +25,55 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<section>Slide coucou_</section>
-					<section>l2</section>
-				
+					<p>Docker</p>
+					<p><i>Une brève introduction</i></p>
 				</section>
-				<section>Slide 2</section>
+				<section>
+					<section>Docker... C'est bien un truc pour faire des machines virtuelles?</section>
+					<section data-background="http://i.giphy.com/l44QoAtMOGDhYjjVu.gif">
+					</section>
+					
+					<section data-markdown>
+						<textarea data-template>
+							<img src="./images/docker_vs_vm.png" class="element-align"/>
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							<img src="./images/vm.png" class="element-align"/>
+							Lancer une machine virtuel, c'est *lancer une machine dans une machine*
+							
+							
+							Ci-dessous une métaphore
+						</textarea>
+					</section>
+					<section data-background="http://i.giphy.com/b7lp44pNiRqsU.gif">
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							<img src="./images/docker.png" class="element-align"/>
+							Lancer un conteneur docker, c'est isoler son exécution du reste du système
+							
+							
+							Ci-dessous une métaphore
+						</textarea>
+					</section>
+					<section data-background="http://i.giphy.com/3oz8xyYJVYlztGuHoQ.gif">
+					</section>
+					<section>
+						<img src="./images/Virtual_Machine_vs_Docker_partage-ressource.png"/>
+					</section>
+				</section>
+				<section>
+					<section data-background="http://i.giphy.com/KPn24x701Asus.gif">Et maintenant, un petit peu de pratique</section>
+					<section data-markdown>
+						<textarea data-template>
+							
+							<img src="http://i.giphy.com/fedryX7dMGMe6lgqDm.gif" with="200px" class="element-align" />		
+							Droplet sur digital ocean sur lequel uniquement docker-ce est installé					
+						</textarea>
+					</section>
+				</section>
 			</div>
 		</div>
 

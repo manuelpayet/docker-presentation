@@ -1,0 +1,9 @@
+.element-align {
+	display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.element-pull-up {
+	margin-top: 10px !important;
+}
