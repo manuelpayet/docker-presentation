@@ -66,12 +66,74 @@
 				</section>
 				<section>
 					<section data-background="http://i.giphy.com/KPn24x701Asus.gif">Et maintenant, un petit peu de pratique</section>
-					<section data-markdown>
+					<section>
+							<img src="http://i.giphy.com/fedryX7dMGMe6lgqDm.gif" width="200px" class="element-align" />		
+							Installation de docker depuis une machine vide
+						<aside class="notes">
+							<ul>
+								<li>https://docs.docker.com/install/linux/docker-ce/debian/#upgrade-docker-ce-1</li>
+								<li>docker run hello-world</li>
+								<li>docker container list (-a)</li>
+								<li>docker image list (parler des tags)</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						Hello nginx
+						<aside class="notes">
+							<ul>
+								<li>docker hub, chercher nginx</li>
+								<li>docker run nginx</li>
+								<li>essayer de s'y connecter sans succès</li>
+								<li>l'arreter, le supprimer</li> 
+								<li>en faire un nouveau avec accès sur le port 80</li>
+								<li>en faire un nouveau avec accès sur le port 700</li>
+								<li>en faire un nouveau avec accès sur le port 400</li>
+								<li>https://gist.github.com/ebababi/4168787/archive/1219b64c438282347efb810f98b4738657fbc673.zip</li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section data-background="http://i.giphy.com/l2Je66zG6mAAZxgqI.gif">Un peu de terminologie</section>
+					<section data-markdown style="font-size: 0.8em !important;">
 						<textarea data-template>
-							
-							<img src="http://i.giphy.com/fedryX7dMGMe6lgqDm.gif" with="200px" class="element-align" />		
-							Droplet sur digital ocean sur lequel uniquement docker-ce est installé					
+							<img src="images/logo docker.png" class="element-align" />	
+							Malcolm McLean et Keith Tantlinger ont standardisé la taille des conteneurs. 
+							Peu importe ce qui se trouve dans un conteneur maintenant, ce conteneur pourra être mis sur un bateau, avion ou camion de la même manière
+
+							Docker veut fait la même chose en informatique, une application reste:
+							 * quelque chose qui s’exécute
+							 * a des dépendances spécifiques pour fonctionner (fichiers, librairies, etc.)
 						</textarea>
+					</section>
+					<section>
+						<img src="images/hubs.png" class="element-align" />		
+						<aside class="notes">
+							On peut facilement faire le parallèle avec git
+						</aside>
+					</section>
+					<section>
+						<img src="images/images et conteneurs.png" class="element-align" />		
+						<aside class="notes">
+							si on veut faire le parallèle avec le développement, un conteneur est l'instanciation d'une image
+						</aside>
+					</section>
+					<section>
+						<img src="images/docker pull et push.png" class="element-align" />		
+						<aside class="notes">
+							si on veut faire le parallèle avec le développement, un conteneur est l'instanciation d'une image
+						</aside>
+					</section>
+					<section>
+						<img src="images/ugly slide port et volumes.png" class="element-align" />		
+						<aside class="notes">
+							<ul>
+								<li>Port exposé</li>
+								<li>Communication interconteneur</li>
+								<li>Volumes</li>
+							</ul>
+						</aside>
 					</section>
 				</section>
 			</div>
