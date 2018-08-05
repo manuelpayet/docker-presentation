@@ -150,7 +150,7 @@
 						<br>
 						<br>
 						<br>
-						<i>P.S : L'image n'a aucun rapport</i>
+						<i>P.S : Illustration sans aucun rapport</i>
 					</section>
 					<section data-markdown>
 						<textarea data-template>
@@ -162,7 +162,43 @@
 						</textarea>
 					</section>
 					<section data-background="http://i.giphy.com/oopluFFzEczJe.gif">
-						Allez hop hop hop un peu de pratique
+						Allez hop hop hop un peu de pratique (nginx)
+						<aside class="notes">
+							<ul>
+								<li>Montrer le dockerfile de nginx sur dockerhub</li>
+								<li>faire sa propre image en y ajoutant html pong</li>
+								<li>parler de l'héritage des images</li>
+							</ul>
+						</aside>
+					</section>
+					<section data-background="http://i.giphy.com/oopluFFzEczJe.gif">
+						Allez hop hop hop un peu de pratique (tetris)
+						<aside class="notes">
+							<ul>
+								<li>Montrer le dockerfile de nginx sur dockerhub</li>
+								<li>faire sa propre image</li>
+								<li>apt-get update && apt-get install -y wget gcc make</li>
+								<li><ul>
+									<li>mkdir /build && cd /build && wget http://www.victornils.net/tetris/vitetris-0.57.tar.gz</li>
+									<li>tar xvzf *.tar.gz</li>
+									<li>cd vitetris-0.57</li>
+									<li>./configure && make install </li>
+									<li>rm -rf /build</li>
+									<li>apt-get remove -y gcc make wget</li>
+								</ul></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section>
+						docker-compose
+						<br>
+						<br>
+						<i>parce que personne n'aime se répéter</i>
+					</section>
+					<section>
+						Ecriture d'un fichier YAML décrivant le(s) conteneurs <i>(ou services en mode swarm)</i> que l'on veut exécuter
 					</section>
 				</section>
 			</div>

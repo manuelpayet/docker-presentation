@@ -1,0 +1,7 @@
+version: '3.3'
+
+services:
+    htmlpong:
+        image: htmlpong:1.2.4-b3
+        ports:
+            - 81:80
