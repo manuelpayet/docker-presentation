@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js_</title>
+		<title>Introduction à Docker</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -105,6 +105,7 @@
 							Docker veut fait la même chose en informatique, une application reste:
 							 * quelque chose qui s’exécute
 							 * a des dépendances spécifiques pour fonctionner (fichiers, librairies, etc.)
+							 * accède à des ressources système
 						</textarea>
 					</section>
 					<section>
@@ -166,7 +167,7 @@
 						<aside class="notes">
 							<ul>
 								<li>Montrer le dockerfile de nginx sur dockerhub</li>
-								<li>faire sa propre image en y ajoutant html pong</li>
+								<li>faire sa propre image en y ajoutant html pong (Dockerfile deja ecrit)</li>
 								<li>parler de l'héritage des images</li>
 							</ul>
 						</aside>
@@ -201,17 +202,24 @@
 						Ecriture d'un fichier YAML décrivant le(s) conteneurs <i>(ou services en mode swarm)</i> que l'on veut exécuter
 					</section>
 					<section data-background="http://i.giphy.com/YQitE4YNQNahy.gif">
-							Nginx
+							un docker-compose pour notre image Nginx
+						<aside class="notes">
+							docker-compose deja ecrit
+						</aside>
 					</section>
 					<section data-background="http://i.giphy.com/YQitE4YNQNahy.gif">
-						Wordpress
+						un docker-compose pour lancer un Wordpress en 2 minutes chrono
+						<aside class="notes">
+							docker-compose deja ecrit
+					</aside>
 					</section>
+					
 				</section>
 				<section>
 					<section data-background="http://i.giphy.com/3o8dFn5CXJlCV9ZEsg.gif">
 						Maintenant, le reste 
 						<br><br>
-						<i>qu'on aura pas le temps de creuser en 1 heure de midi</i>
+						<i>qu'on aura pas le temps de creuser en 1 heure</i>
 					</section>
 
 					<section data-markdown>
